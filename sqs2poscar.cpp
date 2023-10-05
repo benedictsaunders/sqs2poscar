@@ -225,11 +225,11 @@ int main (int argc, char* argv[]) {
         exit(1);
     }
     os << fixed;
-    os << "POSCAR\n";   // line 1: head
-    os << "xxx\n";      // line 2: universal scaler
+    os << "Generated from ATATs MCSQS with sqs2poscar\n";   // line 1: head
+    os << "1.0\n";      // line 2: universal scaler
     for (int i = 0; i < 3; i++) {   // line 3-5: lattice vectors
         for (int j = 0; j < 3; j++) {
-            os << setw(12) << setprecision(8) << dArrLatVec[i][j];
+            os << setw(14) << setprecision(8) << dArrLatVec[i][j];
         }
         os << endl;
     }
