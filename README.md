@@ -9,7 +9,7 @@ Usage: `sqs2poscar bestsqs.out`
   
 Output file: `bestsqs.out-POSCAR`
 
-Post-processing: change `xxx` in the second line of output POSCAR file to your lattice constant.
+Post-processing: The lattice constant is assumed to be 1.0. Change as necessary.
 
 Note: `bestsqs.out` can be any file at present working directory.
 
